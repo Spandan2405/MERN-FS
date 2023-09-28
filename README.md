@@ -1,2 +1,2 @@
 # MERN-FS
-All the tasks i was given project i have done during my first internship 
+All the tasks i was given and project i have done during my first internship 
