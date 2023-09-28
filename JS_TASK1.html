@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <center style="font-size: larger;">
+        <p>Example x = 32243</p>
+        <span>Expected Output : </span> 
+    <script>
+        // Method 1
+        let n1 = 32243;
+        let x1 = n1.toString();
+        let  x2 = x1.split('');
+        let x3 = x2.reverse();
+        let result = x3.join('');
+        console.log(result);
+
+        //Method 2
+        let a = 32243;
+        let b = a.toString(); 
+        let c = b.length; 
+        for(let i =1;i<=c;i++){
+            // console.log(b[c-i]);
+            document.write(b[c-i]);
+        }
+    </script>
+    </center>
+</body>
+
+</html>

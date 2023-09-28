@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Task-5</title>
+</head>
+<style>
+    i{
+        position:absolute;
+        width: 30px;
+        text-align: center;
+    }
+    label{
+        width:150px ;
+        text-align: center;
+    }
+    table{
+        background-color: lightgrey;
+        margin-top: 100px;
+    }
+    input,select{
+        width: 200px;
+    }
+    tr{
+        margin: 10px;
+    }   
+</style>
+<body>
+    <center>
+    <form>
+    <table>
+        <div>
+        <tr class="input-group">
+            <td><label>First Name:</label></td>
+            <td class="input-group-addon"><i class="glyphicon glyphicon-user"></i>
+            <input type="text" placeholder="First Name"  required/></td>
+        </tr>
+        <tr class="input-group">
+            <td> <label>Last Name:</label></td>
+            <td class="input-group-addon"><i class="glyphicon glyphicon-user"></i>
+            <input type="text" placeholder="Last Name"  required/></td>
+        </tr>
+        <tr class="input-group">
+            <td><label>Email :</label></td>
+            <td class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i>
+            <input type="text" placeholder="Email Address" required/></td>
+        </tr>
+        <tr class="input-group">
+            <td><label> Phone #</label></td>
+            <td class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i>
+            <input type="number" placeholder="(845)555-1212"  required/></td>
+        </tr>
+        <tr class="input-group">
+            <td><label>Address</label></td>
+            <td class="input-group-addon"><i class="glyphicon glyphicon-home"></i>
+            <input type="text" placeholder="Address"  required  ></td>
+        </tr>
+        <tr class="input-group">
+            <td><label>City</label></td>
+            <td class="input-group-addon"><i class="glyphicon glyphicon-home"></i>
+            <input type="text" placeholder="city"  required></td>
+        </tr>
+        <tr class="input-group">
+            <td><label>State</label></td>
+            <td class="input-group-addon"><i class="glyphicon glyphicon-list"></i><select>
+                <option>Please select your state</option>
+                <option>ND</option>
+                <option>GJ</option>
+            </select></td>
+        </tr>
+        <tr class="input-group">
+            <td class="align-text-top "><label>Do you have Hosting?</label></td>
+            <td class="px-4"><input type="radio" >Yes <br>
+            <input type="radio">NO</td>
+        </tr>
+        <tr class="input-group">
+            <td><label>Discription</label></td>
+            <td><textarea class="form-control"placeholder="Project Discription"></textarea> </td>
+        </tr>
+        <tr>
+            <td colspan = "2" class="text-center" >
+                <button class="btn btn-warning" type="submit" style="color: white;">Send <i class="glyphicon glyphicon-send"></i></button>
+            </td>
+        </tr>
+        </div>
+    </table>
+    </form>
+    </center>
+    
+</body>
+</html>

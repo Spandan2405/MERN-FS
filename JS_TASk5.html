@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <style>
+        input,textarea{
+            border: 2px solid black;
+        }
+        center{
+            margin: 150px;
+        }
+    </style>
+    <center>
+    <form>
+        <table>
+        <tr>
+            <td><label>Name:</label></td>
+            <td><input type="text" id="Name"></td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" id="Email"></td>
+            <td id="email"></td>
+        </tr>
+        <tr>
+            <td><label>Website:</label></td>
+            <td><input type="text" id="Website"></td>
+            <td id="website"></td>
+        </tr>
+        <tr>
+            <td><label>Message:</label></td>
+            <td><textarea id="Message" style="height: 60px;"></textarea></td>
+            <td id="message"></td>
+        </tr>
+        <tr>
+        <td><button onclick="text()" type="button">Submit</button></td>
+        </tr>
+        </table>
+    </form>
+    <script>
+        function text(){
+            if(document.getElementById("Name").value.length == 0 ){
+                document.getElementById("name").innerHTML = "This field is required";
+                document.getElementById("name").style.color = "red";
+                document.getElementById("Name").style.borderColor = "red";
+            }
+            if(document.getElementById("Email").value.length == 0){
+                document.getElementById("email").innerHTML = "A valid email address is required"
+                document.getElementById("email").style.color = "red"
+                document.getElementById("Email").style.borderColor = "red";
+            }
+            if(document.getElementById("Website").value.length == 0){
+                document.getElementById("website").innerHTML = "A valid url is required"
+                document.getElementById("website").style.color = "red"
+                document.getElementById("Website").style.borderColor = "red";
+            }
+            if(document.getElementById("Message").value.length == 0){
+                document.getElementById("message").innerHTML = "This field is required"
+                document.getElementById("message").style.color = "red"
+                document.getElementById("Message").style.borderColor = "red";
+            }
+        }
+    </script>
+    </center>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <center style="margin: 150px;">
+    <table style="border: 1px solid black;">
+        <tr>
+            <td><label>1st Number:</label></td>
+            <td><input type="number" id="1" placeholder="Ex: 25"></td>
+        </tr>
+        
+        <tr>
+            <td><label>2nd Number:</label></td>
+            <td><input type="number" id="2" placeholder="Ex: 10"></td>
+        </tr>
+        
+        <tr>
+            <td><button onclick="Mul()">Multiply</button></td>
+            <td><button onclick="Div()">Divide</button></td>
+        </tr>
+        <tr>
+            <td><p>The Result is:<br>
+            <span id="result"></span></p></td>
+        </tr>
+        </table>
+        <script>
+            let result;
+            function Mul(){
+                let a = document.getElementById("1").value;
+                let b = document.getElementById("2").value;
+                document.getElementById("result").innerHTML = a*b;
+                console.log(a*b);
+            }
+            function Div(){
+                let a = document.getElementById('1').value;
+                let b = document.getElementById('2').value;
+                document.getElementById("result").innerHTML = a/b;
+                console.log(a/b);
+            }
+        </script>
+        </center>
+</body>
+</html>

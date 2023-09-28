@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+
+<body>
+    <style>
+        label {
+            /* border: 1px solid black; */
+            width: 150px;
+            display: inline-block;
+            text-align: center;
+            font-weight:700;
+        }
+        label[id="conc"]{
+            width: 460px;
+            text-align: left;
+        }
+        td{
+            display: inline-block;
+        }
+
+        input[type="checkbox"] {
+            width: 10px;
+        }
+
+        input[type="radio"] {
+            width: 20px;
+        }
+
+        button {
+            margin-left: 50%;
+        }
+    </style>
+    <center>
+    <h3 style="color: black;">TASK5</h3>
+    <form>
+    <table>
+        <th>
+            <h1 style="color: blue;margin-left: 50px;">REGISTRATION FORM</h1>
+        </th>
+            <tr>
+                <td><label>First Name</label></td>
+                <td><input id="fn" type="text"></td>
+                <td id="FN"></td>
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td><input id="ln" type="text"></td>
+                <td id="LN"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input id="e" type="text"></td>
+                <td id="E"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input id="pd" type="password"></td>
+                <td id="PD"></td>
+            </tr>
+            <tr>
+                <td><label>Re-enter Password</label></td>
+                <td><input id="rpd" type="password"></td>
+                <td id="RPD"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio">Male
+                    <input type="radio">Female
+                </td> 
+            </tr>
+            <tr>
+                <td><label>Age</label></td>
+                <td><input id="a" type="number"></td>
+                <td id="A"></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label></td>
+                <td><input id="pn" type="number"></td>
+                <td id="PN"></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td><input id="add" type="text"></td>
+                <td id="ADD"></td>
+            </tr>
+            <tr>
+                <td><label>State</label></td>
+                <td><input id="st" type="text"></td>
+                <td id="ST"></td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+                    <td><select>
+                        <option>Choose your Country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                    </select>
+                </td><br>
+            </tr>
+            <tr>
+                <td><label>Languages Known</label></td>
+                    <td style="width: fit-content;"><input type="checkbox">English
+                    <input type="checkbox">Kannada
+                    <input type="checkbox">Hindi
+                    <input type="checkbox">Telgu <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label id="conc"><input type="checkbox">Hereby I declare all the given details are true</label> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label id="conc" style="text-align: right;">Log in to <a href="www.ethnus.com">Ethnus
+                        </a>website</label></td>
+            </tr>
+            <tr>
+                <td><button onclick="click()" type="submit">Register</button></td>
+            </tr><br>
+    </table>
+</form>
+<script>
+    function click(){
+        if(document.getElementById("fn").value.length == 0){
+            document.write = "POOR";
+            document.getElementById("FN").style.color = "red";
+        }
+        if(document.getElementById("ln").value.length == 0){
+            document.getElementById("LN").innerHTML = "POOR";
+            document.getElementById("LN").style.color = "red";
+        }
+        if(document.getElementById("e").value.length == 0){
+            document.getElementById("E").innerHTML = "POOR";
+            document.getElementById("E").style.color = "red";
+        }
+        if(document.getElementById("pd").value.length == 0){
+            document.getElementById("PD").innerHTML = "POOR";
+            document.getElementById("PD").style.color = "red";
+        }
+        if(document.getElementById("rpd").value.length == 0){
+            document.getElementById("RPD").innerHTML = "POOR OR MISMATCH";
+            document.getElementById("RPD").style.color = "red";
+        }
+    }   
+</script>
+
+</center>
+</body>
+
+
+</html>

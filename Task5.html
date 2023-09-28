@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+<body>
+    <style>
+        p{
+            border: 1px solid black;
+            width: 460px;
+        }
+        div{
+            border: 1px solid black;
+            width: 460px;
+            margin: auto;
+            margin-top:50px;
+        }
+        label{
+            border: 1px solid black;
+            width: 150px;
+            display: inline-block;
+            text-align: center;
+        }
+        label[id="conc"]{
+            width: 460px;
+            text-align: left;
+        }
+        input{
+            width:300px;
+        }
+        input[type="checkbox"]{
+            width: 10px;
+        }
+        input[type="radio"]{
+            width: 20px;
+        }
+        button{
+            margin-left: 50%;
+        }
+
+    </style>
+    <h3 style="color: black; margin-left: 45%;">TASK5</h3>
+    <h1 style="color: blue; margin-left: 37%;">REGISTRATION FORM</h1>
+    <table>
+        <div>
+        <label>First Name</label><input type="text">
+        <label>Last Name</label><input type="text">
+        <label>Email</label><input type="text">
+        <label>Password</label><input type="password">
+        <label>Re-enter Password</label><input type="password">
+        <label>Gender</label>
+            <input type="radio">Male 
+            <input type="radio">Female  <br>
+        <label>Age</label><input type="number">
+        <label>Phone Number</label><input type="number">
+        <label>Address</label><input type="text">
+        <label>State</label><input type="text">
+        <label>Country</label>
+        <select>
+            <option>Choose your Country</option>
+            <option>India</option>
+            <option>USA</option>
+        </select>
+        <br>    
+        <label>Languages Known</label>
+        <input type="checkbox">English      
+        <input type="checkbox">Kannada      
+        <input type="checkbox">Hindi   
+        <input type="checkbox">Telgu <br> 
+        <label id="conc"><input type="checkbox">Hereby I declare all the given details are true</label> <br>
+        <label id="conc" style="text-align: right;">Log in to <a href="www.ethnus.com">Ethnus </a>website</label>
+        </div><br>
+        <button>Register</button>
+    </table>
+    
+</body>
+</html>
